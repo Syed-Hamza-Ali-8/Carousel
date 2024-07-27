@@ -24,7 +24,7 @@ function update() {
 next.addEventListener("click", () => {
     currentIndex++;
     if (currentIndex >= cricketersCarosule.length) {
-        currentIndex = 0
+        currentIndex = cricketersCarosule.length - 1
     }
 
     update()
@@ -34,7 +34,7 @@ next.addEventListener("click", () => {
 prev.addEventListener("click", () => {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = cricketersCarosule.length - 1;
+        currentIndex = 0;
 
     }
 
